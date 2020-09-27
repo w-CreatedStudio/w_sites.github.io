@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+/*ヘッダー*/
+header{
+    background-color: aquamarine;
+    padding:10px;
+}
+.logo{
+    font-size: 30px;
+    color: green;
+    background-color: rgb(189, 255, 189);
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.headerLink,li{
+    display: inline;
+    margin-left: 20px;
+}
+header a:link{color: black; text-decoration: none;}
+header a:visited{color: black;}
+header a:hover{color: green;}
+footer a:active{color: orange;}
+/*フッター*/
+footer{
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+footer a:link{color: white; text-decoration: none;}
+footer a:visited{color: white;}
+footer a:hover{color: green;}
+footer a:active{color: orange;}
