@@ -1,6 +1,8 @@
 body{
     margin: 100px 0px 0px 0px;
+    text-decoration: none;
 }
+
 /*ヘッダー*/
 header{
     position: fixed;
@@ -13,10 +15,9 @@ header{
     box-sizing: border-box;
     box-shadow: -2px 5px 20px 11px rgba(0, 0, 0, 0.1);
 }
-nav{
-    margin: 0 0 0 auto;
-}
+nav{margin: 0 0 0 auto;}
 .logo{
+    font-family: 'Georgia',sans-serif;
     text-shadow: 5px 5px 10px #15ff00;
     font-size: 30px;
     font-weight: bold;
@@ -36,19 +37,22 @@ footer a:active{color: orange;}
 
 /*メイン*/
 .title{
-    font-size: 7vw;
+    font-size: 8vw;
     padding: 0 0 0 5px;
+    margin: 0 0 10px 0;
 }
 .days{
     background: linear-gradient(90deg, #1C1C1C 0%, #CCCCCC 100%) no-repeat 50% 50% / 100% 100%;
     color: white;
-    padding: 10px;
+    padding: 1px;
 }
+.day{margin:20px;}
 .divBig{
     margin: 0px;
-    padding: 70px 0px 70px 0px;
+    padding: 80px 0px 80px 0px;
     background-color: greenyellow;
     font-size: 4vmax;
+    font-weight: bold;
     text-align: center;
 }
 .pBig{
@@ -56,6 +60,8 @@ footer a:active{color: orange;}
     padding: 70px 0px 70px 0px;
     text-align: center;
 }
+main a:link{text-decoration: none;}
+
 
 /*フッター*/
 footer{
