@@ -5,6 +5,7 @@ body{
 
 /*ヘッダー*/
 header{
+    z-index: 2;
     position: fixed;
     top: 0px;
     background-color: rgb(102, 255, 140);
@@ -68,6 +69,7 @@ footer a:active{color: orange;}
 }
 .bt{text-align: center;}
 .button {
+    z-index: 1;
     margin: 5px;
     position: relative;
     border: solid 0px;
