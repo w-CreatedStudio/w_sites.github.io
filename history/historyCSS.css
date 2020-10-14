@@ -1,0 +1,88 @@
+body{
+    margin:0px;
+    text-decoration: none;
+}
+
+/*ヘッダー*/
+header{
+    position: fixed;
+    top: 0px;
+    background-color: rgb(102, 255, 140);
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: -2px 5px 20px 11px rgba(0, 0, 0, 0.1);
+}
+nav{margin: 0 0 0 auto;}
+.logo{
+    font-family: 'Georgia',sans-serif;
+    text-shadow: 5px 5px 10px #15ff00;
+    font-size: 30px;
+    font-weight: bold;
+    color: #043500;
+}
+.headerLink li{
+    margin: 0 30px 0 0;
+}
+.headerLink ul{
+    display: flex;
+    list-style: none;
+}
+header a:link{color: black; text-decoration: none;}
+header a:visited{color: black;}
+header a:hover{color: green;}
+footer a:active{color: orange;}
+
+/*メイン*/
+.title{
+    font-size: 3em;
+    color: white;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+    padding: 100px 0 0 15px;
+    margin: 0 0 0px 0;
+    background-size: 20px 20px;
+    background-color: #43A047;
+    background-image:
+    linear-gradient(45deg, rgba(56, 142, 60, 0.5) 25%, transparent 25%,
+    transparent 50%, rgba(56, 142, 60, 0.5) 50%, rgba(56, 142, 60, 0.5) 75%,
+    transparent 75%, transparent),
+    linear-gradient(-45deg, rgba(56, 142, 60, 0.5) 25%, transparent 25%,
+    transparent 50%, rgba(56, 142, 60, 0.5) 50%, rgba(56, 142, 60, 0.5) 75%,
+    transparent 75%, transparent);
+}
+.expo{
+    margin: 10px 10px 40px 10px;
+    border-bottom: solid black 2px;
+}
+details{
+    margin: 10px;
+    height: 1em;
+    transition: .5s;
+}
+details[open]{
+    font-size: 1.2em;
+    height: 4em;
+}
+summary {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+} 
+summary::-webkit-details-marker {
+    display:none;
+  }
+  
+/*フッター*/
+footer{
+    color: white;
+    background-color: rgb(54, 54, 54);
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+}
+footer a:link{color: white; text-decoration: none;}
+footer a:visited{color: white;}
+footer a:hover{color: green;}
+footer a:active{color: orange;}
