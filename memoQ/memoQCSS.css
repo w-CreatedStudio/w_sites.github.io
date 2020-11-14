@@ -1,0 +1,64 @@
+body{margin: 0px;}
+
+/*header*/
+header{
+    position: sticky;
+    top: 0px;
+    background-color: aquamarine;
+    padding: 0.5rem;
+}
+.logo{
+    text-align: center;
+    font-size: 1.5rem;   
+}
+
+/*main*/
+.title{
+    margin: 0px;
+    padding: 1.5rem 0rem 0.2rem 5rem;
+    font-size: 3rem;
+}
+
+.sabtitle{
+    padding-left: 6rem;
+    margin-bottom: 1rem;
+}
+.links{
+    text-align: center;
+    background-color: rgb(0, 179, 179);
+    color: white;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.links ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.links li{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    list-style: none;
+    border-left: dashed 1px rgb(0, 0, 92);
+}
+.links li:first-child{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    list-style: none;
+    border-left: none;
+}
+.about{margin: 1rem;}
+h2{
+    border-left: solid 0.6rem blue;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0px;
+    background-color: rgba(154, 247, 250, 0.541);
+}
+
+/*footer*/
+footer{
+    background-color: silver;
+}
+.myName{
+    padding-top: 5rem;
+}
