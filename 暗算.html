@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+        var A; var B; var Ans;
+        function AnswerClick(){
+            var in_Ans = document.getElementById("num_Ans");
+            in_Ans.innerHTML = Ans;
+        }
+        function Next(){
+            A = Math.floor(Math.random()*100)+0;
+            B = Math.floor(Math.random()*100)+0;
+            Kigou_which = Math.floor(Math.random()*2)+0;
+            if(Kigou_which > 0){
+                Ans = A + B;
+                var in_Kigou = document.getElementById("Kigou");
+                in_Kigou.innerHTML = "+";
+            }else{
+                if (A < B){
+                    var hoge = A; A = B; B = hoge;
+                }
+                Ans = A - B;
+                var in_Kigou = document.getElementById("Kigou");
+                in_Kigou.innerHTML = "-";
+            }
+            var in_A = document.getElementById("num_A");
+            in_A.innerHTML = A;
+            var in_B = document.getElementById("num_B");
+            in_B.innerHTML = B;
+            var del_ans = document.getElementById("num_Ans");
+            del_ans.innerHTML = "";
+        }
+    </script>
+    <style type="text/css">
+    body{margin-left: 1rem;}
+    h1{border-left: solid 1rem rgb(0, 162, 255);
+    background-color: rgba(0, 162, 255, 0.26);}
+    span{font-size: 2rem;} div{color: red;}
+    input{margin-left: 2rem; font-size: 2rem;}
+    #ans{background-color: rgb(255, 209, 209);}
+    #next{border-radius: 100%;}
+    </style>
+</head>
+<body>
+    <h1>暗算</h1>
+    <span id="num_A">はじめに</span>
+    <span id="Kigou">「次」</span>
+    <span id="num_B">を押す</span>
+    <div id="num_Ans">正解はここに表示</div>
+    <input type="button" value="答え" onclick="AnswerClick()" id="ans">
+    <input type="button" value="次" onclick="Next()" id="next">
+</body>
+</html>
