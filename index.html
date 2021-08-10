@@ -11,8 +11,8 @@
             in_Ans.innerHTML = Ans;
         }
         function Next(){
-            A = Math.floor(Math.random()*100)+0;
-            B = Math.floor(Math.random()*100)+0;
+            A = Math.floor(Math.random()*90)+10;
+            B = Math.floor(Math.random()*90)+10;
             Kigou_which = Math.floor(Math.random()*2)+0;
             if(Kigou_which > 0){
                 Ans = A + B;
@@ -24,7 +24,7 @@
                 }
                 Ans = A - B;
                 var in_Kigou = document.getElementById("Kigou");
-                in_Kigou.innerHTML = "-";
+                in_Kigou.innerHTML = "－";
             }
             var in_A = document.getElementById("num_A");
             in_A.innerHTML = A;
@@ -38,8 +38,9 @@
     body{margin-left: 1rem;}
     h1{border-left: solid 1rem rgb(0, 162, 255);
     background-color: rgba(0, 162, 255, 0.26);}
-    span{font-size: 2rem;} div{color: red;}
-    input{margin-left: 2rem; font-size: 2rem;}
+    span{font-size: 3rem;} div{color: red;}
+    div{font-size: 2rem;}
+    input{margin-left: 2rem; font-size: 3rem;}
     #ans{background-color: rgb(255, 209, 209);}
     #next{border-radius: 100%;}
     </style>
