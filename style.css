@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem 0.5rem;
+    box-sizing: border-box;
+    background: #606060;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+    color: white;
+    padding-top: 1rem;
+}
+
+button {
+    background-color: #cacaca;
+    margin-right: 0.01rem;
+    padding: 0.2rem 0.5rem;
+    border: 0.2rem groove #6b6b6b;
+}
+
+#actionButton>button {
+    background-color: rgb(28, 28, 28);
+    color: lime;
+    border: 0;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
