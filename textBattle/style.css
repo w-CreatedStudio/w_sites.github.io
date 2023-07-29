@@ -10,6 +10,7 @@ header {
 }
 
 body {
+    font-size: 24pt;
     background-color: rgb(28, 28, 28);
     color: white;
     padding-top: 1rem;
